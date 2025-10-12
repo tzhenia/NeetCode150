@@ -11,15 +11,16 @@ class Solution {
             return false;
         }
 
+        // Hash Table + counting 
         int[] count = new int[26];
         for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i) - OFFSET]++;
-            count[t.charAt(i) - OFFSET]--;
+            count[s.charAt(i) - OFFSET]++; // for first word count++
+            count[t.charAt(i) - OFFSET]--; // for second word count--
         }
 
         for (int val : count) {
             if (val != 0) {
-                return false;
+                return false; // test case: different amount of letters
             }
         }
 
