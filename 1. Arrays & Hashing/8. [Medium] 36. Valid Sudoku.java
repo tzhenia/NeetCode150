@@ -29,3 +29,8 @@ public class Solution {
         return true;
     }
 }
+
+// Bitmask approach more better
+// Time complexity: O(n^2)
+// Space complexity: O(n)
+// https://neetcode.io/problems/valid-sudoku
