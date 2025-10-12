@@ -4,4 +4,4 @@
 * Optimal solutions and explanations.
 <br />
 Fork and enjoy: <a href="https://leetcode.com/problem-list/vnqk0pv5/" target="_blank">LeetCode list sorted by topic</a> <br />
-Author: <a href="https://leetcode.com/problem-list/vnqk0pv5/](https://neetcode.io/practice?tab=neetcode150)" target="_blank">NeetCode.io</a> <br />
+Author: <a href="https://neetcode.io/practice?tab=neetcode150" target="_blank">NeetCode.io</a> <br />
