@@ -1,6 +1,6 @@
 // Encoding & Decoding (Optimal)
-// Time complexity: O(m) for each encode() and decode() function calls.
-// Space complexity: O(m+n) for each encode() and decode() function calls.
+// Time complexity: O(m) for each encode() and decode()
+// Space complexity: O(m+n) for each encode() and decode()
 
 public class Codec {
     private static final char DELIMETR = '#';
