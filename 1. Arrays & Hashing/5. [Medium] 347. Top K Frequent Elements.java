@@ -12,18 +12,18 @@ public class Solution {
         
         // 2. init arr (Hash Table) where
         // index == count of freq
-        // values is empty List
+        // values is empty List<Integer> (will be count of freq)
         List<Integer>[] freq = new List[nums.length + 1];
         for (int i = 0; i < freq.length; i++) {
             freq[i] = new ArrayList<>();
         }
 
-        // 3. fill (sort) Hash Table with List of freq
+        // 3. fill (and sort) arr
         for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
             var index = entry.getValue(); // count of freq
-            var num = entry.getKey(); // num
+            var num = entry.getKey();
 
-            freq[index].add(num); // arr (Hash Table)
+            freq[index].add(num); // freq[index] - List
         }
 
         // 4. init result
