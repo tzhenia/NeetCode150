@@ -23,17 +23,16 @@ public class Codec {
         List<String> res = new ArrayList<>();
 
         int i = 0;
+        int j = 0;
         while (i < str.length()) {
-            int j = i;
-
             while (str.charAt(j) != DELIMETR) {
                 j++; // count how many numbers 1 or 2 or 3 ...(Ex: 1 vs 10 vs 101)
             }
 
             int length = Integer.parseInt(str.substring(i, j)); // parse number
 
-            i = j + 1; // move left pointer (index of starting word)
-            j = i + length; // index of ending word
+            i = j + 1; // move left pointer + skip DELIMETR. Index of starting word.
+            j = i + length; // index of ending word.
             String word = str.substring(i, j);
             res.add(word);
 
@@ -46,5 +45,4 @@ public class Codec {
 
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
-// codec.decode(codec.encode(strs));
 // codec.decode(codec.encode(strs));
