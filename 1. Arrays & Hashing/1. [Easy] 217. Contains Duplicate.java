@@ -10,7 +10,6 @@ class Solution {
             if (set.contains(i)) {
                 return true;
             }
-
             set.add(i);
         }
 
