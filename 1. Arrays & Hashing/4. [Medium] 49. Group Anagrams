@@ -1,8 +1,8 @@
 // Hash Table
-// Time complexity: O(m∗n)
+// Time complexity: O(m*n)
 // Space complexity: 
 //     O(m) extra space. 
-//     O(m∗n) space for the output list.
+//     O(m*n) space for the output list.
 
 public class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
