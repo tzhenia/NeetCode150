@@ -20,7 +20,7 @@ class Solution {
 
         for (int val : count) {
             if (val != 0) {
-                return false; // test case: different amount of letters
+                return false; // in case: different amount of letters
             }
         }
 
