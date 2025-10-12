@@ -3,5 +3,5 @@
 * Java language
 * Optimal solutions and explanations.
 <br />
-Fork and enjoy: [LeetCode list](https://leetcode.com/problem-list/vnqk0pv5/) <br />
-Author: [neetcode.io](https://neetcode.io/practice?tab=neetcode150)
+Fork and enjoy: <a href="https://leetcode.com/problem-list/vnqk0pv5/" target="_blank">LeetCode list sorted by topic</a> <br />
+Author: <a href="https://leetcode.com/problem-list/vnqk0pv5/](https://neetcode.io/practice?tab=neetcode150)" target="_blank">NeetCode.io</a> <br />
