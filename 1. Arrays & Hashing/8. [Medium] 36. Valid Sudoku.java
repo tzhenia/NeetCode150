@@ -1,36 +1,39 @@
-// Hash Set (One Pass)
-// Time complexity: O(n^2)
-// Space complexity: O(n^2)
+// Hash Set + unique ids
 
-public class Solution {
+// If the array dimensions (ROWS, COLS) depend on the input size N (example: N x N matrix) — then: 
+// Time complexity: O(n²)
+// Space complexity: O(n²)
+
+// But if the array size is fixed — it never changes regardless of the input —
+// then the total number of iterations (ROWS * COLS) is a constant. That means:
+// Time complexity: O(1) - because you always perform the same constant number of operations
+// Space complexity: O(1) - the array itself also takes constant space
+
+class Solution {
     public boolean isValidSudoku(char[][] board) {
-        Map<Integer, Set<Character>> cols = new HashMap<>();
-        Map<Integer, Set<Character>> rows = new HashMap<>();
-        Map<String, Set<Character>> squares = new HashMap<>();
+        Set<String> seen = new HashSet<>();
 
-        for (int r = 0; r < 9; r++) {
-            for (int c = 0; c < 9; c++) {
-                if (board[r][c] == '.')
-                    continue;
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                char curr = board[row][col];
+                if (curr != '.') {
+                    String byRow = "row-" + row + "-num-" + curr;
+                    String byCol = "col-" + col + "-num-" + curr;
+                    String byBox = "box-row-" + row / 3 + "-col-" + col / 3 + "-num-" + curr;
 
-                String squareKey = (r / 3) + "," + (c / 3);
+                    if (!seen.add(byRow) || !seen.add(byCol) || !seen.add(byBox)) {
+                        return false;
+                    }
 
-                if (rows.computeIfAbsent(r, k -> new HashSet<>()).contains(board[r][c]) ||
-                        cols.computeIfAbsent(c, k -> new HashSet<>()).contains(board[r][c]) ||
-                        squares.computeIfAbsent(squareKey, k -> new HashSet<>()).contains(board[r][c])) {
-                    return false;
                 }
-
-                rows.get(r).add(board[r][c]);
-                cols.get(c).add(board[r][c]);
-                squares.get(squareKey).add(board[r][c]);
             }
         }
+
         return true;
     }
 }
 
-// Bitmask approach more better
-// Time complexity: O(n^2)
+// Bitmask approach more better if the array dimensions (ROWS, COLS) depend on the input size N
+// Time complexity: O(n²)
 // Space complexity: O(n)
 // https://neetcode.io/problems/valid-sudoku
