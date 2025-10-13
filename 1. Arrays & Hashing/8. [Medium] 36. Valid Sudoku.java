@@ -20,7 +20,7 @@ class Solution {
                     String byRow = "row-" + row + "-num-" + curr;
                     String byCol = "col-" + col + "-num-" + curr;
 
-                    // (row / 3) and (col / 3) trick to identify the correct box
+                    // (row/3) and (col/3) trick to identify the correct box
                     String byBox = "box-row-" + row / 3 + "-col-" + col / 3 + "-num-" + curr;
 
                     if (!seen.add(byRow) || !seen.add(byCol) || !seen.add(byBox)) {
