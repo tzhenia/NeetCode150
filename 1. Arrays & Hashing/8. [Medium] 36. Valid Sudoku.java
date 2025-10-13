@@ -10,7 +10,7 @@
 // Space complexity: O(1) - the array itself also takes constant space
 
 class Solution {
-    public boolean isValidSudoku(char[][] board) {
+    public boolean isValidSudoku(char[][] board) { // the board is always 9x9
         Set<String> seen = new HashSet<>();
 
         for (int row = 0; row < 9; row++) {
@@ -19,6 +19,9 @@ class Solution {
                 if (curr != '.') {
                     String byRow = "row-" + row + "-num-" + curr;
                     String byCol = "col-" + col + "-num-" + curr;
+
+                    // (row / 3) trick to identify the correct box
+                    // (col / 3) trick to identify the correct box
                     String byBox = "box-row-" + row / 3 + "-col-" + col / 3 + "-num-" + curr;
 
                     if (!seen.add(byRow) || !seen.add(byCol) || !seen.add(byBox)) {
