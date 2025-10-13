@@ -15,6 +15,7 @@ class Solution {
             if (!set.contains(num - 1)) {
                 int length = 0;
 
+                // count consecutive sequence
                 while (set.contains(num + length)) {
                     length++;
                 }
