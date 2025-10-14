@@ -1,3 +1,7 @@
+// Two pointers
+// Time complexity: O(n)
+// Space complexity: O(1)
+
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int l = 0;
