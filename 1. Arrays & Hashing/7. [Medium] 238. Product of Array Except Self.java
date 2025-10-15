@@ -29,24 +29,24 @@ class Solution {
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int arrLength = nums.length;
-        
-        int[] res = new int[arrLength];
-        Arrays.fill(res, 1); // should override default value from 0 to 1
+
+        int[] ans = new int[arrLength];
+        Arrays.fill(ans, 1); // should override default value from 0 to 1
 
         // iterate from the start and save prefix
         int prefix = 1;
         for (int i = 0; i < arrLength; i++) {
-            res[i] *= prefix;
+            ans[i] *= prefix;
             prefix *= nums[i];
         }
 
         // iterate from the end and save postfix
         int postfix = 1;
         for (int i = arrLength - 1; i >= 0; i--) {
-            res[i] *= postfix;
+            ans[i] *= postfix;
             postfix *= nums[i];
         }
 
-        return res;
+        return ans;
     }
 }
