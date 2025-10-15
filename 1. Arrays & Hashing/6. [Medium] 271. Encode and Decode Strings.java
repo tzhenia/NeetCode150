@@ -1,7 +1,7 @@
 // Encoding & Decoding (Optimal)
 // Time complexity: O(m) for each encode() and decode()
 // Space complexity: O(m+n) for each encode() and decode()
-//     Where m is the sum of lengths of all the strings and n is the number of strings.
+//   Where m is the sum of lengths of all the strings and n is the number of strings.
 
 public class Codec {
     private static final char DELIMETR = '#';
