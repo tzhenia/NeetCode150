@@ -1,4 +1,4 @@
-// Three Pointers (i + l + r) + Sorting
+// Sorting + Three Pointers (i + l + r)
 // After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted".
 
 // Time complexity: O(n²)
