@@ -1,3 +1,6 @@
+// Two Pointers + Sorting
+// After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted".
+
 // Time complexity: O(n²)
 // Space complexity:
 //   O(1) or O(n) extra space depending on the sorting algorithm.
@@ -8,7 +11,7 @@ class Solution {
     
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
-        Arrays.sort(nums); // After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted".
+        Arrays.sort(nums);
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > TARGET) { // After sorting, the first element can't be bigger than zero (TARGET).
