@@ -21,7 +21,7 @@ public class Codec {
 
     // Decodes a single string to a list of strings.
     public List<String> decode(String str) {
-        List<String> res = new ArrayList<>();
+        List<String> ans = new ArrayList<>();
 
         int i = 0;
         int j = 0;
@@ -35,12 +35,12 @@ public class Codec {
             i = j + 1; // move left pointer + skip DELIMETR. Index of starting word.
             j = i + length; // index of ending word.
             String word = str.substring(i, j);
-            res.add(word);
+            ans.add(word);
 
             i = j; // move pointer to next word;
         }
 
-        return res;
+        return ans;
     }
 }
 
