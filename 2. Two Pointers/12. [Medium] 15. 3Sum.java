@@ -8,7 +8,7 @@ class Solution {
     
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
-        Arrays.sort(nums); // After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted"
+        Arrays.sort(nums); // After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted".
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > TARGET) { // After sorting, the first element can't be bigger than zero (TARGET).
