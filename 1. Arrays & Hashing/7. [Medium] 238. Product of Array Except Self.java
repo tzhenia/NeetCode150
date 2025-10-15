@@ -1,8 +1,8 @@
 // Prefix & Suffix (Optimal)
 // Time complexity: O(n)
 // Space complexity: 
-//   O(1) extra space.
-//   O(n) space for the output array.
+//     O(1) extra space.
+//     O(n) space for the output array.
 
 // original
 class Solution {
