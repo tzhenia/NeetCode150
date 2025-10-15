@@ -1,4 +1,4 @@
-// Time complexity: O(n 2)
+// Time complexity: O(n²)
 // Space complexity:
 //   O(1) or O(n) extra space depending on the sorting algorithm.
 //   O(m) space for the output list.
