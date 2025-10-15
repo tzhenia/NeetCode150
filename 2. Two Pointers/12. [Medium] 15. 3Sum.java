@@ -36,7 +36,7 @@ class Solution {
                     l++;
                     r--; // Сan work without r--
 
-                    // Trick: left and right number can't be the same.
+                    // Trick: left and right numbers can't be the same.
                     while (l < r && nums[l - 1] == nums[l]) {
                         l++;
                     }
