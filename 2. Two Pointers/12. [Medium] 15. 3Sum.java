@@ -1,7 +1,7 @@
 // Time complexity: O(n 2)
 // Space complexity:
-//   O(1) or O(n) extra space depending on the sorting algorithm.
-//   O(m) space for the output list.
+//     O(1) or O(n) extra space depending on the sorting algorithm.
+//     O(m) space for the output list.
 
 class Solution {
     public static final int TARGET = 0; // Task requirement
