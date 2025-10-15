@@ -27,7 +27,7 @@ public class Solution {
         }
 
         // 4. init result
-        int[] res = new int[k];
+        int[] ans = new int[k];
         int index = 0;
 
         // 5. iterate from the end
@@ -35,15 +35,15 @@ public class Solution {
         // last index is the bigest freq
         for (int i = freq.length - 1; i > 0; i--) {
             for (int n : freq[i]) {
-                res[index] = n;
+                ans[index] = n;
                 index++;
 
                 if (index == k) { // point where we should stop filling res
-                    return res;
+                    return ans;
                 }
             }
         }
 
-        return res;
+        return ans;
     }
 }
