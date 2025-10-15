@@ -5,18 +5,17 @@
 
 class Solution {
     public static final int TARGET = 0; // Task requirement
-
-    // if we sort input nums, idea of solution will be similar with https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
+    
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
-        Arrays.sort(nums);
+        Arrays.sort(nums); // After sorting the input nums, the solution's idea will be similar to "167. Two Sum II - Input Array Is Sorted"
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > TARGET) { // After sorting, the first element can't be bigger than zero (TARGET).
                 break;
             }
 
-            if (i > 0 && nums[i - 1] == nums[i]) { // Trick: left and right number can't be the same.
+            if (i > 0 && nums[i - 1] == nums[i]) { // Trick: left and right numbers can't be the same.
                 continue;
             }
 
