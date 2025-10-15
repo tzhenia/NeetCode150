@@ -32,7 +32,7 @@ class Solution {
                     List<Integer> triplet = List.of(nums[i], nums[l], nums[r]);
                     ans.add(triplet);
                     l++;
-                    //r--;
+                    r--; // Сan work without r--
 
                     // Trick: left and right number can't be the same.
                     while (l < r && nums[l - 1] == nums[l]) {
