@@ -11,8 +11,8 @@ class Solution {
         while (l < r) {
             int currWidth = r - l; // Current distance between Left and Right lines (container width).
             int currMinHeight = Math.min(height[l], height[r]); // The maximum amount of water the current container can hold.
-            int currentArea = currMinHeight * currWidth;
-            max = Math.max(max, currentArea);
+            int currArea = currMinHeight * currWidth;
+            max = Math.max(max, currArea);
 
             if (height[l] > height[r]) {
                 r--;
