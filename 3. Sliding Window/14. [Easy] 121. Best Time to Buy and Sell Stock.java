@@ -1,4 +1,4 @@
-// One Pass
+// Dynamic Programming (One Pass)
 // Time complexity: O(n)
 // Space complexity: O(1)
 
