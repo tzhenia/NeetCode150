@@ -1,4 +1,4 @@
-// Prefix & Suffix (Optimal)
+// Prefix & Suffix
 // Time complexity: O(n)
 // Space complexity: 
 //   O(1) extra space.
