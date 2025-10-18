@@ -1,4 +1,4 @@
-// Hash Map (One Pass)
+// Hash Map (one pass)
 // Time complexity: O(n)
 // Space complexity: O(n)
 
