@@ -1,4 +1,4 @@
-// Two Pointers. Hint: formula
+// Two Pointers
 // Time complexity: O(n)
 // Space complexity: O(1)
 
@@ -20,11 +20,11 @@ class Solution {
             if (height[l] < height[r]) {
                 l++;
                 lMax = Math.max(lMax, height[l]);
-                ans += lMax - height[l]; // formula
+                ans += lMax - height[l]; // formula (hint)
             } else {
                 r--;
                 rMax = Math.max(rMax, height[r]);
-                ans += rMax - height[r]; // formula
+                ans += rMax - height[r]; // formula (hint)
             }
         }
 
