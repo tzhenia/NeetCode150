@@ -18,8 +18,8 @@ class Solution {
 
         int l = 0;
         for (int r = 0; r < s.length(); r++) {
-            while (set.contains(s.charAt(r))) {
-                set.remove(s.charAt(l));
+            while (set.contains(s.charAt(r))) { // The right pointer checks whether an element exists in the Sliding Window. 
+                set.remove(s.charAt(l)); // The left pointer removes an element from the Sliding Window.
                 l++;
             }
 
