@@ -1,3 +1,8 @@
+// Sliding Window
+// Time complexity: O(n)
+// Space complexity: O(m)
+//   Where n is the length of the string and m is the total number of unique characters in the string.
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
