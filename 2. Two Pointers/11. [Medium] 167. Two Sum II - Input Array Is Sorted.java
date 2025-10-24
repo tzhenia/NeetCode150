@@ -15,8 +15,8 @@ class Solution {
             } else if (currSum < target) {
                 l++;
             } else {
-                ans[0] = l + 1; // +1 The index in this task started from 1 (not as usual from 0)
-                ans[1] = r + 1; // +1 The index in this task started from 1 (not as usual from 0)
+                ans[0] = l + 1; // +1 The index in this task starts from 1. (not as usual from 0)
+                ans[1] = r + 1; // +1 The index in this task starts from 1. (not as usual from 0)
                 return ans;
             }
         }
