@@ -1,3 +1,8 @@
+// Sliding Window
+// Time complexity: O(n)
+// Space complexity: O(m)
+//   Where n is the length of the string and m is the total number of unique characters in the string.
+
 class Solution {
     private static final char OFF_SET = 'A';
 
