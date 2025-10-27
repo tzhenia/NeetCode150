@@ -12,7 +12,7 @@ class Solution {
         }
 
         int[] hashTable = new int[26];
-        int maxF = 0;
+        int maxF = 0; // max frequency from hashTable
         int ans = 0;
         int l = 0;
         int r = 0;
