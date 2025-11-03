@@ -18,6 +18,7 @@ class Solution {
             s2Count[s2.charAt(i) - OFF_SET]++;
         }
 
+        // Count how many letters already have matching frequencies in the initial window.
         int matches = 0;
         for (int i = 0; i < s1Count.length; i++) {
             if (s1Count[i] == s2Count[i]) {
