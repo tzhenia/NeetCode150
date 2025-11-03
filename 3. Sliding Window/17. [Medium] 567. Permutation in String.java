@@ -34,6 +34,9 @@ class Solution {
 
             int index = s2.charAt(r) - OFF_SET;
             s2Count[index]++; // Add into sliding window (right pointer)
+            // We’re adding a new character (the right boundary). There are two cases when matches change:
+            //   If after incrementing s2Count[index] it becomes equal to s1Count[index], that means they were previously different, and now they match → so we do matches++.
+            //   If they were equal before the increment, then after increasing s2Count[index], it becomes one greater (i.e., s2Count == s1Count + 1), which means this character no longer matches → so we do matches--.
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] + 1 == s2Count[index]) {
