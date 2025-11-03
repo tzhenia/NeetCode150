@@ -45,6 +45,9 @@ class Solution {
 
             index = s2.charAt(l) - OFF_SET;
             s2Count[index]--; // Remove from sliding window (left pointer)
+            // We’re decreasing s2Count[index]. Again:
+            //   If after the decrement s2Count becomes equal to s1Count, then matches++.
+            //   If they were equal before (and now s2Count became one less), then matches--.
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] == s2Count[index] + 1) {
