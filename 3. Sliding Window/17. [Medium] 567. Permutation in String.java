@@ -1,4 +1,6 @@
-// Sliding Window
+// Sliding Window 
+// Update matches in O(1) time without comparing all 26 elements on every step.
+
 // Time complexity: O(n)
 // Space complexity: O(1)
 
