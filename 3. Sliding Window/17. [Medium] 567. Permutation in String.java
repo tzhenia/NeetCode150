@@ -25,15 +25,15 @@ class Solution {
             }
         }
 
-        int l = 0;
-        int r = s1.length();
+        int l = 0; // Begin of sliding window
+        int r = s1.length(); // End of sliding window
         while (r < s2.length()) {
             if (matches == ENGLISH_LENGHT_ALPHABET) {
                 return true;
             }
 
             int index = s2.charAt(r) - OFF_SET;
-            s2Count[index]++;
+            s2Count[index]++; // Add into sliding window (right pointer)
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] + 1 == s2Count[index]) {
@@ -41,7 +41,7 @@ class Solution {
             }
 
             index = s2.charAt(l) - OFF_SET;
-            s2Count[index]--;
+            s2Count[index]--; // Remove from sliding window (left pointer)
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] - 1 == s2Count[index]) {
