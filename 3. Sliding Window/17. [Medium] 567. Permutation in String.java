@@ -32,22 +32,22 @@ class Solution {
                 return true;
             }
 
-            int index = s2.charAt(r) - OFF_SET;
-            s2Count[index]++; // Add into sliding window (right pointer)
             // We’re adding a new character (the right boundary). There are two cases when matches change:
             //   If after incrementing s2Count[index] it becomes equal to s1Count[index], that means they were previously different, and now they match → so we do matches++.
             //   If they were equal before the increment, then after increasing s2Count[index], it becomes one greater (i.e., s2Count == s1Count + 1), which means this character no longer matches → so we do matches--.
+            int index = s2.charAt(r) - OFF_SET;
+            s2Count[index]++; // Add into sliding window (right pointer)
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] == s2Count[index] - 1) {
                 matches--;
             }
 
-            index = s2.charAt(l) - OFF_SET;
-            s2Count[index]--; // Remove from sliding window (left pointer)
             // We’re decreasing s2Count[index]. Again:
             //   If after the decrement s2Count becomes equal to s1Count, then matches++.
             //   If they were equal before (and now s2Count became one less), then matches--.
+            index = s2.charAt(l) - OFF_SET;
+            s2Count[index]--; // Remove from sliding window (left pointer)
             if (s1Count[index] == s2Count[index]) {
                 matches++;
             } else if (s1Count[index] == s2Count[index] + 1) {
