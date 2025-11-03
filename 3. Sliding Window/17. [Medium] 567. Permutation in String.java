@@ -39,7 +39,7 @@ class Solution {
             //   If they were equal before the increment, then after increasing s2Count[index], it becomes one greater (i.e., s2Count == s1Count + 1), which means this character no longer matches → so we do matches--.
             if (s1Count[index] == s2Count[index]) {
                 matches++;
-            } else if (s1Count[index] + 1 == s2Count[index]) {
+            } else if (s1Count[index] == s2Count[index] - 1) {
                 matches--;
             }
 
@@ -47,7 +47,7 @@ class Solution {
             s2Count[index]--; // Remove from sliding window (left pointer)
             if (s1Count[index] == s2Count[index]) {
                 matches++;
-            } else if (s1Count[index] - 1 == s2Count[index]) {
+            } else if (s1Count[index] == s2Count[index] + 1) {
                 matches--;
             }
 
