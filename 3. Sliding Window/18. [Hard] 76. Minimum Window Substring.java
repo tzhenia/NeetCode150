@@ -32,7 +32,10 @@ class Solution {
                 have++;
             }
 
+            // positive case when we can remove from left
             while (have == need) {
+
+                // case for updating answer
                 if ((r - l + 1) < ansLength) {
                     ansLength = r - l + 1;
                     ans[0] = l;
