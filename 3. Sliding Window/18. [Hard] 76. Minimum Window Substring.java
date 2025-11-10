@@ -1,4 +1,6 @@
-// Sliding Window + 2 HashMaps + have + need
+// Sliding Window + 2 HashMaps (countT, window) + have + need
+// compare have == need in O(1) time without comparing all elements on every step.
+
 // Time complexity: O(n+m)
 // Space complexity: O(m)
 //   Where n is the length of the string s and m is the total number of unique characters in the strings t and s.
