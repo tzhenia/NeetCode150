@@ -42,6 +42,7 @@ class Solution {
                     ans[1] = r;
                 }
 
+                // remove from left
                 char leftChar = s.charAt(l);
                 window.put(leftChar, window.get(leftChar) - 1);
                 if (countT.containsKey(leftChar) && window.get(leftChar) < countT.get(leftChar)) {
@@ -50,7 +51,6 @@ class Solution {
 
                 l++;
             }
-            
             r++;
         }
         
