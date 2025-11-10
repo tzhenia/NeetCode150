@@ -11,8 +11,8 @@ class Solution {
             return "";
         }
 
-        Map<Character, Integer> countT = new HashMap<>();
         Map<Character, Integer> window = new HashMap<>();
+        Map<Character, Integer> countT = new HashMap<>();
         for (char c : t.toCharArray()) {
             countT.put(c, countT.getOrDefault(c, 0) + 1);
         }
