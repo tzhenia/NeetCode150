@@ -1,4 +1,4 @@
-// Monotonic decreasing queue
+// Monotonic Decreasing Queue
 // Time complexity: O(n)
 // Space complexity: O(n)
 
