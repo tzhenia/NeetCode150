@@ -1,4 +1,4 @@
-// Monotonic Decreasing Deque
+// Monotonic decreasing queue
 // Time complexity: O(n)
 // Space complexity: O(n)
 
