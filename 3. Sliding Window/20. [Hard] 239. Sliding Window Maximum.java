@@ -10,7 +10,7 @@ class Solution {
         int l = 0;
         int r = 0;
         while (r < nums.length) {
-            // Remove all smaller elements from queue
+            // Remove all smaller elements from Deque
             // We don’t need those elements anymore — the current element is larger, 
             // which means it will “live” longer in the deque.
             // This keeps the deque in a strictly decreasing order of values.
